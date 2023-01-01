@@ -7,9 +7,9 @@
             <input type="text" placeholder="Name" autocomplete="off" autofocus name="name" required>
             <select name="sport">
                 <option selected disabled>Sport</option>
-                {$ for sport in sports $}
+                {% for sport in sports %}
                     <option value="{{ sport }}">{{ sport }}</option>
-                {$ endfor $}
+                {% endfor %}
             </select>
             <button>Register</button>
         </form>
